@@ -27,7 +27,7 @@ planet_api_key = os.environ['PL_API_KEY']
 client = MongoClient('mongodb://localhost:27017/')
 db = client.planet
 ships_collection = db.ships
-cursor_collectio n = db.cursors
+cursor_collection = db.cursors
 # ships_collection.create_index([('updateTime', pymongo.ASCENDING)], unique=True)
 
 # Init the session object
